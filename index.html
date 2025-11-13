@@ -6,21 +6,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <script src="./script.js" defer></script>
+<body class="body">
     <nav>
         <p class="logo">Fantasy Football GenV</p>
     </nav>
-    <section class="hero">
+    <section class="popUp-hero" id="pop-hero">
+        <div class="popup-container">
+            <div class="popUp-">
+                <label for="name" class="popUp-lable">Name</label>
+                <input type="text" placeholder="Enter name" class="popUp-input">
+            </div>
+            <div class="popUp-">
+                <label for="position" class="popUp-lable">Position</label>
+                <input type="text" placeholder="Enter Position" class="popUp-input">
+            </div>
+            <div class="popUp-">
+                <label for="price" class="popUp-lable">Price</label>
+                <input type="number" placeholder="enter price" class="popUp-input">
+            </div>
+            <div class="popUp-btn">
+                <button class="popUp-close closepop" id="popUp-close">Close</button>
+                <button class="popUp-Add addPlayers closepop" id="popUp-Add">Add</button>
+            </div>
+        </div>
+    </section>
+    <section class="hero" id="hero">
         <section class="playersSection">
             <div class="add-filer">
                 <input type="text" class="filterplayers">
-                <button id="addingPlayer" class="addPlayers" >+add</button>
+                <button id="testing" class="addPlayers" >+add</button>
             </div>
             <div class="titlePlyers">
                 <h3 class="titleplayers">Players</h3>
             </div>
-            <div class="players">
+            <div class="players" id="players">
+                <div  class="player">
+                    <div class="photoPlayer">
+                    </div>
+                    <div class="infoPlayer">
+                        <a class="playerName" href="./joueurs.html"> <h3>Younes Rajix</h3></a>
+                        <div class="infoPlayerText">
+                            <p class="email">gradien</p>
+                            <p class="email">1.000.000</p>
+                        </div>
+                    </div>
+                    <div class="playerButtons">
+                        <button class="addToCompitition">+Add</button>
+                        <button class="editplayer">Edit</button>
+                    </div>
+                </div>
                 <div  class="player">
                     <div class="photoPlayer">
                     </div>
@@ -116,5 +150,7 @@
             </div>
         </section>
     </section>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>

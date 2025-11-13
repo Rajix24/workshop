@@ -1,22 +1,47 @@
-//selecting element of sideBar:
-// const addPlayer = document.getElementById(addingPlayer);
-const addPlayer = document.getElementById('addingPlayer');
-console.log(addPlayer);
+const elementBtn = document.getElementById("testing");
+const players = document.getElementById("players");
+const showPopUp = document.getElementById("pop-hero");
+const hiddenHero = document.getElementById("hero");
+const closepopbtn = document.getElementById("popUp-close");
+const addpopupbtn = document.getElementById("popUp-Add");
+const closepoup = document.getElementsByClassName("closepop");
+// console.log(showPopUp);
+// console.log(players)
 
 
 
 
-// adding function 
-//filter function
-//affiche function 
-//adding to container 
-//edit smal information
 
 
-async function elementSizeBar() {
-   let response = await fetch("data.json")//that is gitting data
-   let data = await response.json()//that is return data to object 
-    console.log(data)
+
+//that is the function for the adding some player
+elementBtn.addEventListener("click", ()=>{
+showPopUp.style.display = "flex";
+hiddenHero.style.display = "none";
+    players.innerHTML += `
+                <div  class="player">
+                    <div class="photoPlayer">
+                    </div>
+                    <div class="infoPlayer">
+                        <a class="playerName" href="./joueurs.html"> <h3>${name}</h3></a>
+                        <div class="infoPlayerText">
+                            <p class="email">${position}</p>
+                            <p class="email">${price}</p>
+                        </div>
+                    </div>
+                    <div class="playerButtons">
+                        <button class="addToCompitition">+Add</button>
+                        <button class="editplayer">Edit</button>
+                    </div>
+                </div>
+
+    `
+})
+
+//function taht clowes the popUp
+function closePopUp (){
+    
+
 }
 
 
@@ -35,21 +60,3 @@ async function elementSizeBar() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//what we neet to go in the side bar is this functions 
-//function Ajouter un joueur
-//function Modifier un joueur
-//function Supprimer un joueur

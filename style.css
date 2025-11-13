@@ -48,6 +48,10 @@
     border-radius: 20px;
     color:white;
     font-size: 16px;
+    cursor: pointer;
+}
+.addPlayers:hover{
+    background: #2511ffb4;
 }
 .filterplayers{
     width: 70%;
@@ -185,4 +189,54 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
+}
+.popUp-hero{
+    
+    width: 100%;
+    height: 100vh;
+    display: none;    
+    justify-content: center;
+    align-items: center;
+; 
+}
+.popup-container{
+    padding: 50px;
+    border:1px solid #2E2680;
+    border-radius: 20px;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.popUp-input{
+    padding: 0px 20px ;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 0.2px solid #2E2680;
+}
+.popUp-btn{
+    display: flex;
+    column-gap: 50px;
+}
+.popUp-close{
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid #2E2680;
+    background: transparent;
+    color: #2E2680;
+    font-size: 16px;
+    font-weight: 300;
+}
+.popUp-{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popUp-Add{
+    width: 150px;
 }
