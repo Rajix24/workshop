@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    display:flex;
+}
+.logo{
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding:15px;
+    color: #2E2680;
+    border-bottom: 1px solid #2E2680;
+}
+.playersSection{
+    margin:20px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.add-filer{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.titlePlyers{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #2E2680; 
+}
+.titleplayers{
+    margin-bottom: 10px;
+}
+.addPlayers{
+    padding:10px;
+    width: 80px;
+    background: #574FAA;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    font-size: 16px;
+}
+.filterplayers{
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    border:1px solid #2E2680;
+}
+.filterplayers:focus{
+    outline: none;
+}
+.players{
+    margin-top:20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    border-radius:20px;
+    padding :10px;
+}
+.player{
+    height: 100px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid #2E2680;
+}
+.photoPlayer{
+    width: 70px;
+    height: 70px;
+    background-image: url(./images/5.jfif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.playerName{
+    text-decoration: none;
+    color: black;
+}
+.infoPlayer{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-items: center;
+}
+.editplayer{
+    width: 50px;
+    height: 30px;
+    background: #574FAA;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    font-size: 16px;
+}
+.addToCompitition{
+    width: 25px;
+    height: 20px;
+}
+.playerButtons{
+    margin: 0px 10px;
+}
+.addToCompitition{
+    width: 50px;
+    margin-bottom:10px;
+    height: 30px;
+    background: #574FAA;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    font-size: 16px;
+}
+.infoPlayerText{
+    margin: 10px;
+}
+
+
+/* contain part  */
+.composition{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    border-left: 1px solid #2E2680;
+}
+.containerTtilte{
+    margin: 0px 30px;
+    font-size: 18px;
+    color: #2E2680;
+    font-weight: bold;
+}
+.footerDeletPlayer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.deletPlayers{
+    width: 200px;
+    height: 50px;
+    background: #f6463f;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    font-size: 16px;
+}
+.buget{
+    display: flex;
+    gap: 2px;
+}
+.container{
+    padding: 20px;
+    display: grid;
+    row-gap:20px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+}
+.card{
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid  #2E2680;
+}
+.cardPosition{
+    margin: 10px;
+}
+.boxcomposition{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
